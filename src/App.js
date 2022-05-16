@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import {Mensaje2} from './Mensaje2.js';
+import { Mensaje } from './Mensaje2.js';
+
+
+const Descripcion = () => {
+  return <p>Esta es una descripción</p>;
+};
+   
+const App = () => {
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Mensaje color ='blue' message= 'Hola gente'/>
+      <Mensaje2 color ='red' message= 'estamos en un curso' />
+      <Descripcion />
+    </div> 
+  )
 }
 
 export default App;
